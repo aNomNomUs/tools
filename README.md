@@ -1,6 +1,14 @@
 # tools
 Collection of python tools and code snippets 
 
+---
+
+## hyperweb_download_media.js
+
+Hyperweb script to download media being served directly to the browser. Tired of being let down by links to download media that just open media in the browser instead of letting you download it? No-more!!! download your favorite script injector for iOS or Android and just add this script.
+
+---
+
 ## HEIC to PNG Converter
 
 HEIC to PNG Converter is a Python-based GUI application that facilitates the conversion of HEIC image files to PNG format. This tool provides an easy-to-use interface to batch convert images stored in a directory, ensuring the images are accessible in a more universally compatible format.
