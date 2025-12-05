@@ -1,5 +1,38 @@
 # tools
-Collection of python tools and code snippets 
+Collection of python tools and code snippets.
+
+---
+
+## Offline AstroTalk Clone
+
+An intentionally dependency-light astrology toolkit modeled after chatty
+horoscope apps. Everything runs locally with the Python standard library—no
+network calls, package downloads, or other supply-chain surprises.
+
+### Capabilities
+
+- Deterministic horoscope generation using local templates.
+- Compatibility scoring with human-friendly vibes.
+- Birthday-to-sign resolution and profile payload helpers.
+- Minimal HTTP API via `http.server` for drop-in demos.
+- CLI entry point for quick local checks.
+- Unit tests built on `unittest` (stdlib only).
+
+### Usage
+
+```bash
+# CLI examples
+python -m astrology.cli horoscope "Aries" 2024-03-22
+python -m astrology.cli compatibility Aries Gemini
+python -m astrology.cli profile "Taylor" 1992-12-13
+
+# Run the local API
+python -m astrology.server
+# Then query: curl "http://localhost:8080/horoscope?sign=Virgo&date=2024-09-15"
+```
+
+Security posture: all inputs are sanitized, deterministic seeds avoid runaway
+entropy, and no remote code is pulled in at runtime.
 
 ---
 
